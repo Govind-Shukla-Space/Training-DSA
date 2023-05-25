@@ -1,0 +1,10 @@
+def reverse_rec(num):
+	if num>0:
+		print(num,end=' ')
+		reverse_rec(num-1)
+n=int(input("Enter a number:-"))
+if n<1:
+    print("Invalid Input!!!")
+else:
+    print("Numbers from 1 to ",n," are:-")
+    reverse_rec(n)
